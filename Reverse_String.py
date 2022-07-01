@@ -1,5 +1,4 @@
-my_string=input()
-str1=""
-for i in my_string:
-    str1=i+str1
-print(str1)
+n=input()
+w=n.split()
+w1=list(reversed(w))
+print(" ".join(w1))
