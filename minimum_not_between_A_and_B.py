@@ -1,17 +1,17 @@
 n=int(input())
-c=list(map(int,input().split()))
-a,b=map(int,input().split())
-d=[]
-f=[]
-e=0
+a=list(map(int,input().split()))
+x,y=map(int,input().split())
+b=[]
+c=[]
+d=0
 for i in range(n):
-    if c[i]>=a and c[i]<=b:
-        d.append(c[i])
+    if a[i]>=x and a[i]<=y:
+        b.append(a[i])
 for i in range(n):
-    if c[i] not in d:
-        e+=1
-        f.append(c[i])
-if e==0:
+    if a[i] not in b:
+        d+=1
+        c.append(a[i])
+if d==0:
     print("-1")
 else:
-    print(min(f))
+    print(min(c))
