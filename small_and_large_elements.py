@@ -1,9 +1,5 @@
-n=input()
-m=n.split(' ')
-l=len(m)-1
-for i in range(len(m)):
-    print(min(m[0]),end=' ')
-    break
-for i in range(len(m)):
-    print(max(m[l]),end=' ')
-    break
+n=input().split()
+if len(n)==2:
+    print(min(n[0]),max(n[1]))
+else:
+    print(min(n[0]),max(n[len(n)-2]))
