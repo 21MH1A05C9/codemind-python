@@ -1,12 +1,10 @@
-m=input()
-n=input()
+a=input().lower()
+b=input().lower()
+a=a.split(" ")
+b=b.split(" ")
 c=0
-m2=m.lower()
-n2=n.lower()
-m1=m2.split(' ')
-n1=n2.split(' ')
-for i in m1:
-    for j in n1:
-        if(i==j):
-            c+=1
+for i in a:
+    for j in b:
+       if i==j:
+           c+=1
 print(c)
