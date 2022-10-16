@@ -1,5 +1,4 @@
-n=input()
-w=n.split(" ")
-k=w[::-1]
-h=" ".join(k)
-print(h)
+s=list(map(str,input().split()))
+n=s[::-1]
+for i in n:
+    print(i,end=' ')
